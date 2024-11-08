@@ -1,6 +1,6 @@
 import { RouterProvider } from "react-router";
 import { routers } from "./router";
-import { App, ConfigProvider, theme } from "antd";
+import { App, ConfigProvider } from "antd";
 
 import { useRef } from "react";
 

@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import {
   DragDropContext,
   Droppable,
@@ -6,7 +6,6 @@ import {
   DropResult,
 } from "react-beautiful-dnd";
 import ProjectManagementCard from "../components/ProjectManagementCard";
-
 
 type Column = {
   id: number;
@@ -36,8 +35,6 @@ const initialColumns: Column[] = [
   { id: 78, title: "Testing", taskIds: [] },
   { id: 90, title: "Done", taskIds: [4, 33] },
   { id: 65, title: "Back Log", taskIds: [] },
-
-
 ];
 
 const initialTasks: Task[] = [
@@ -306,7 +303,6 @@ const ProjectManagementDnD = () => {
         height: "100%",
       }}
     >
-
       <DragDropContext onDragEnd={onDragEnd}>
         <Droppable droppableId="columns" direction="horizontal" type="column">
           {(provided) => (
@@ -339,7 +335,7 @@ const ProjectManagementDnD = () => {
                         ref={provided.innerRef}
                         style={{
                           ...provided.draggableProps.style,
-                         
+
                           display: "flex",
                           flexDirection: "column",
                           border: "1px solid lightgrey",
@@ -347,7 +343,7 @@ const ProjectManagementDnD = () => {
                           minWidth: "285px",
                           height: "90vh",
                           overflow: "auto",
-                    
+
                           background: "transparent",
                           padding: "8px",
                           boxShadow: "0 2px 4px rgba(0, 0, 0, 0.1)",
@@ -396,7 +392,7 @@ const ProjectManagementDnD = () => {
                   )}
                 </Draggable>
               ))}
-         
+
               {provided.placeholder}
             </div>
           )}
