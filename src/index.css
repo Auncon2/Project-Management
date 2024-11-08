@@ -1,0 +1,409 @@
+body {
+  margin: 0;
+  font-family: "Mulish", sans-serif;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-shadow: 0;
+  font-family: "Mulish", sans-serif;
+}
+.g_loading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  text-align: center;
+  background: rgba(0, 0, 0, 0.05);
+  border-radius: 4px;
+}
+.spinner-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.login-form-forgot {
+  float: right;
+}
+.login-form-button {
+  width: 100%;
+  margin-bottom: 10px;
+}
+@media (max-width: 767px) {
+  .login_form_card {
+    background-color: #cae3f9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    overflow: hidden;
+  }
+  .login_form_single_card {
+    background-color: #ffffff;
+    padding: 24px;
+    /* margin: 15px; */
+    border-radius: 8px;
+  }
+  .login_form_image {
+    display: none !important;
+  }
+}
+@media (min-width: 768px) {
+  .login_form_card {
+    width: 52%;
+    height: 80vh;
+    border-radius: 12px;
+    background-color: #cae3f9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    overflow: hidden;
+  }
+  .login_form_single_card {
+    /* background-color: #ffffff; */
+    padding: 30px;
+    margin: 15px;
+    border-radius: 12px;
+  }
+}
+
+.ant-layout-sider-children {
+  overflow-y: auto;
+  scroll-behavior: smooth;
+}
+/* Google chrome  */
+.ant-layout-sider-children::-webkit-scrollbar {
+  width: 0px;
+  background: transparent; /* make scrollbar transparent */
+}
+.ant-layout-sider-children {
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* IE 10+ */
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+.resize-handle {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 8px;
+  height: 100%;
+  cursor: ew-resize;
+  transition: opacity 0.2s;
+  z-index: 1;
+}
+
+/* @font-face {
+    font-family: Imported;
+    src: url(./components/assets/Rubik-Regular.ttf);
+  } */
+#root {
+  font-family: Imported;
+}
+/* CUSTOM CSS @test purpose */
+.border {
+  background-color: #9491911a;
+  border-radius: 7px;
+}
+
+.p-2 {
+  padding: 5px;
+}
+
+.p-5 {
+  padding: 10px;
+}
+
+.p-10 {
+  padding: 20px;
+}
+
+.my-10 {
+  margin: 20px 0;
+}
+.my-20 {
+  margin: 40px 0;
+}
+
+.mt-5 {
+  margin-top: 10px;
+}
+
+.mt-10 {
+  margin-top: 20px;
+}
+
+.mb-10 {
+  margin-bottom: 20px;
+}
+
+.mt-20 {
+  margin-top: 40px;
+}
+
+.text_white {
+  color: #fff;
+}
+
+/* range picker  */
+
+@media (max-width: 480px) {
+  .ant-calendar-range {
+    width: 320px;
+  }
+  .ant-calendar-range-part {
+    width: 100%;
+  }
+}
+
+/* range picker  */
+
+@media (max-width: 500px) {
+  .ant-picker-dropdown .ant-picker-panel-container .ant-picker-panels {
+    display: inline-flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+.ant-popover-inner {
+  margin-right: 10px;
+}
+/* * width */
+::-webkit-scrollbar {
+  width: 3px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+@media (max-width: 768px) {
+  .hide-on-small {
+    display: none;
+  }
+}
+
+.notification-div {
+  cursor: pointer;
+}
+.notification-div:hover {
+  background-color: rgb(235, 233, 233);
+  color: white;
+  padding-left: 5px;
+}
+
+.custom-list {
+  padding: 5px 0px !important;
+}
+
+@media only screen and (min-width: 200px) and (max-width: 767px) {
+  .input_member_search {
+    min-width: 230px;
+  }
+}
+
+@media only screen and (min-width: 911px) and (max-width: 1920px) {
+  .input_member_search {
+    min-width: 400px;
+    font-size: 16px;
+  }
+}
+
+.ant-upload-select {
+  width: 100%;
+}
+/* .......................menu item.............................. */
+:root {
+  --menu-item-selected-color: #6657af;
+  --menu-item-selected-bg-color: #f5f5f5; /* Light mode selected color */
+}
+
+[data-theme="light"] {
+  --menu-item-selected-color: white;
+  --menu-item-selected-bg-color: #000000; /* Dark mode selected color */
+}
+
+.ant-menu-submenu-title {
+  color: white !important;
+  font-weight: 400 !important;
+}
+
+.ant-menu-item {
+  color: white !important;
+  font-weight: 400;
+  border-top-left-radius: 100px !important;
+  border-bottom-left-radius: 100px !important;
+  border: none !important;
+  width: 100% !important;
+}
+
+.ant-menu-title-content {
+  color: white !important;
+  font-weight: 400;
+}
+
+.ant-menu-item-icon {
+  color: white !important;
+}
+
+.ant-menu-item-selected {
+  background-color: var(--menu-item-selected-bg-color) !important;
+  border-top-left-radius: 100px !important;
+  border-bottom-left-radius: 100px !important;
+  border: none !important;
+  width: 100% !important;
+}
+
+.ant-menu-item-selected .ant-menu-title-content {
+  color: var(--menu-item-selected-color) !important;
+  font-weight: bolder;
+}
+
+.ant-menu-item-selected .ant-menu-item-icon {
+  color: var(--menu-item-selected-color) !important;
+}
+
+.ant-menu-submenu-arrow::before,
+.ant-menu-submenu-arrow::after {
+  color: white !important;
+}
+
+/* ......................................................... */
+@media (max-width: 768px) {
+  /* Tablet and below */
+  :where(.css-dev-only-do-not-override-1t3vhcf).ant-popover
+    .ant-popover-content {
+    position: absolute;
+    right: -135px;
+  }
+}
+
+@media (max-width: 900px) {
+  :where(.css-dev-only-do-not-override-mj7xot).ant-popover
+    .ant-popover-content {
+    /* position: relative; */
+    position: absolute;
+    right: -135px !important;
+  }
+  :where(.css-mj7xot).ant-popover .ant-popover-content {
+    /* position: relative; */
+    position: absolute;
+    right: -135px !important;
+  }
+}
+
+/* ...........dnd start........................ */
+.columns-container {
+  display: flex;
+  flex-direction: row;
+  /* display: grid;
+  grid-template-columns: repeat(5, 1fr); */
+  gap: 10px; /* Gap between columns */
+  width: 100%;
+
+  max-width: 100%;
+  overflow-x: auto;
+  padding: 100%;
+  height: 100%;
+  background: transparent;
+}
+
+.column {
+  margin: 0;
+  border: 1px solid lightgrey;
+  border-radius: 9px;
+  min-width: 270px;
+
+  display: flex;
+  flex-direction: column;
+  background-color: #f1f2f4;
+  padding: 8px; /* Add padding for content spacing */
+  /* height: 100vh; */
+  /* min-height: 100px; */
+  overflow: auto;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  /* background-color: #666cff; */
+}
+
+.task {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid lightgrey;
+  border-radius: 9px;
+  padding: 8px;
+  margin-bottom: 8px;
+  background-color: white;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  min-height: 50px;
+}
+
+h3 {
+  padding: 8px;
+}
+/* ...........dnd end........................ */
+
+/* .......................ant table header............................... */
+
+th.ant-table-cell {
+  background: #e0ddee !important;
+  white-space: nowrap;
+}
+:where(.css-dev-only-do-not-override-1awcnlq).ant-table-wrapper
+  .ant-table-thead
+  > tr
+  > th,
+:where(.css-dev-only-do-not-override-1awcnlq).ant-table-wrapper
+  .ant-table-thead
+  > tr
+  > td {
+  color: white !important;
+  /* background: #1d1835 !important; */
+  background: #1d1835 !important;
+  white-space: nowrap;
+}
+/* .......................Ant design pagination...................................... */
+.ant-pagination-item,
+.ant-pagination-prev,
+.ant-pagination-next {
+  /* background-color: #666cff !important;
+  color: white !important; */
+  border-radius: 50% !important;
+  /* border: none !important; */
+}
+.ant-pagination-item a ::before {
+  /* color: white !important; */
+  color: rgb(12, 12, 12) !important;
+}
+
+.ant-pagination-item-active {
+  /* border: 1px solid white !important; */
+  background-color: #6657af !important;
+  color: white !important;
+  transform: scale(1.3);
+}
+
+.ant-pagination-item-active a {
+  color: white !important;
+}
+
+/* .ant-pagination-prev .ant-pagination-item-link,
+.ant-pagination-next .ant-pagination-item-link {
+  color: white !important;
+  border-radius: 50% !important;
+  background-color: #7d86e8 !important;
+  border: none !important;
+} */
